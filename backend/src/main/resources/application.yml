@@ -1,0 +1,19 @@
+server:
+  port: 5000
+spring:
+  application:
+    SECRET_KEY: "JoFjTUiCrVOc/JqOwmhAu5vTQ3XXqlo+OyKcdEPfb78QSui/FysXKwZDSnVtmukk"
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/xepdb1
+    username: instagram
+    password: instagram
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: oracle
+    database-platform: org.hibernate.dialect.OracleDialect
